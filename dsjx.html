@@ -1,0 +1,12 @@
+<script>
+var gotourl = "http://play.zhuiqu.com/union/loginapi/1098?zmcon=de2e7570ed3636223158153eeea076a1";
+function GetRequest(){
+  var url = location.href;
+  var theRequest = new Object();
+  if(url.indexOf("?") != -1) {
+    return "&"+url.substr(url.indexOf("?")+1);
+  }else{
+    return "";
+  }
+}
+window.location.replace(gotourl+GetRequest());</script>
